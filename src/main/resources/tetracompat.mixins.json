@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.sswltzz.tetracompat.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "tetracompat.refmap.json",
+  "mixins": [
+    "ftbultimine.FTBUltimineMixin",
+    "ftbultimine.RightClickHandlersInvoker"
+  ],
+  "client": [],
+  "injectors": {
+  }
+}
