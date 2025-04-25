@@ -29,7 +29,7 @@ public class TetraCompat
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
-
+        onRegister(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -37,7 +37,9 @@ public class TetraCompat
         // Some common setup code
     }
 
+    private void onRegister(IEventBus modEventBus) {
 
+    }
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {

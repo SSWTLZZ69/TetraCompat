@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "tetracompat.refmap.json",
   "mixins": [
+    "alexscaves.GalenaGauntletItemMixin",
     "ftbultimine.FTBUltimineMixin",
     "ftbultimine.RightClickHandlersInvoker"
   ],

@@ -1,0 +1,15 @@
+{
+  "type": "exdeorum:hammer",
+  "conditions": [
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "type": "tetra:modular_item",
+        "modules": [
+          ["double/basic_hammer_right"],
+          ["double/basic_hammer_left"]
+        ]
+      }
+    }
+  ]
+}

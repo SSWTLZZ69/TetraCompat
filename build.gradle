@@ -157,12 +157,21 @@ dependencies {
     //tetra
     implementation fg.deobf("curse.maven:mutil-351914:6418901")
     implementation fg.deobf("curse.maven:tetra-289712:6418957")
+    implementation fg.deobf("curse.maven:tetracelium-929534:5936208")
     // ftb ultimine
     implementation fg.deobf("curse.maven:ftb-library-404465:6164053")
     implementation fg.deobf("curse.maven:ftb-ultimine-386134:5363345")
+
     // quark
 //    implementation fg.deobf("curse.maven:quark-243121:6427817")
 //    implementation fg.deobf("curse.maven:zeta-968868:6432578")
+    // farmers delight
+//    implementation fg.deobf("curse.maven:farmers-delight-398521:6154802")
+    //exdeorum
+    implementation fg.deobf("curse.maven:exdeorum-901420:6430497")
+
+    implementation fg.deobf("curse.maven:citadel-331936:5633260")
+    implementation fg.deobf("curse.maven:alexs-caves-924854:5848216")
 
     implementation(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))
     implementation(jarJar("io.github.llamalad7:mixinextras-forge:0.4.1")) {
