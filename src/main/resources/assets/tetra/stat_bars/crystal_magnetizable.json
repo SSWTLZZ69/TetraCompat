@@ -2,7 +2,8 @@
   "type": "tetra:default",
   "key": "tetra.stats.tetracompat:crystal_magnetizable",
   "contexts": [
-    "tetra:workbench"
+    "tetra:workbench",
+    "tetra:holosphere"
   ],
   "min": 0,
   "max": 1,

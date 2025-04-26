@@ -1,0 +1,12 @@
+{
+  "tetracompat.effect.crystal_magnetizable.name": "晶体磁化",
+  "tetracompat.effect.crystal_magnetizable.tooltip": "可被磁化的晶体",
+  "tetra.stats.tetracompat:crystal_magnetizable": "晶体磁化",
+  "tetra.stats.tetracompat:crystal_magnetizable.tooltip": "可被磁化的晶体",
+  "tetra.stats.tetracompat:crystal_magnetizable.tooltip_short": "可被磁化的晶体",
+  "tetracompat.effect.magnetizable.name": "磁化",
+  "tetracompat.effect.magnetizable.tooltip": "可被磁化的金属",
+  "tetra.stats.tetracompat:magnetizable": "磁化",
+  "tetra.stats.tetracompat:magnetizable.tooltip": "可被磁化的金属",
+  "tetra.stats.tetracompat:magnetizable.tooltip_short": "可被磁化的金属"
+}
