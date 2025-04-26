@@ -4,6 +4,7 @@ plugins {
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'org.spongepowered.mixin' version '0.7.+'
+    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
 }
 
 version = mod_version
@@ -130,6 +131,11 @@ repositories {
     maven {
         url = "https://cursemaven.com"
     }
+    maven {
+        // location of the maven that hosts JEI files since January 2023
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
+    }
 }
 mixin {
     add sourceSets.main, "${mod_id}.refmap.json"
@@ -138,6 +144,7 @@ mixin {
 }
 
 dependencies {
+
     // Specify the version of Minecraft to use.
     // Any artifact can be supplied so long as it has a "userdev" classifier artifact and is a compatible patcher artifact.
     // The "userdev" classifier will be requested and setup by ForgeGradle.
@@ -149,9 +156,9 @@ dependencies {
 
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
-    // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
-    // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
-    // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}")
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}")
+    runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
 
     implementation fg.deobf("dev.architectury:architectury-forge:${architectury_version}")
     //tetra
@@ -166,12 +173,13 @@ dependencies {
 //    implementation fg.deobf("curse.maven:quark-243121:6427817")
 //    implementation fg.deobf("curse.maven:zeta-968868:6432578")
     // farmers delight
-//    implementation fg.deobf("curse.maven:farmers-delight-398521:6154802")
+    implementation fg.deobf("curse.maven:farmers-delight-398521:6154802")
     //exdeorum
     implementation fg.deobf("curse.maven:exdeorum-901420:6430497")
 
     implementation fg.deobf("curse.maven:citadel-331936:5633260")
     implementation fg.deobf("curse.maven:alexs-caves-924854:5848216")
+    implementation fg.deobf("curse.maven:my-nethers-delight-1003673:5673085")
 
     implementation(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))
     implementation(jarJar("io.github.llamalad7:mixinextras-forge:0.4.1")) {

@@ -6,7 +6,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -29,16 +31,12 @@ public class TetraCompat
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
-        onRegister(modEventBus);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, TCConfig.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         // Some common setup code
-    }
-
-    private void onRegister(IEventBus modEventBus) {
-
     }
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
