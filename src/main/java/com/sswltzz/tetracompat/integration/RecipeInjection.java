@@ -28,7 +28,7 @@ public class RecipeInjection {
 
         // 注入新的配方
 
-        if (ModList.get().isLoaded(FarmersDelight.MODID) && ModList.get().isLoaded(TetraceliumMod.MOD_ID) && TCConfig.tetraceliumKnifeCompat)
+        if (ModList.get().isLoaded("farmersdelight") && ModList.get().isLoaded("tetracelium") && TCConfig.tetraceliumKnifeCompat)
             FarmersDelightCompat.injectRecipes(manager.getByName(), byNameBuilder::put);
 
         // 构建新 byName
