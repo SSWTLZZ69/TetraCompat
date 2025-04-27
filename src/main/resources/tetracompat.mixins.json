@@ -9,7 +9,8 @@
     "RecipeManagerMixin",
     "alexscaves.GalenaGauntletItemMixin",
     "ftbultimine.FTBUltimineMixin",
-    "ftbultimine.RightClickHandlersInvoker"
+    "ftbultimine.RightClickHandlersInvoker",
+    "tetra.ToolActionHelperMixin"
   ],
   "client": [],
   "injectors": {
