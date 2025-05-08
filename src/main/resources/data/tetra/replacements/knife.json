@@ -1,0 +1,242 @@
+[
+  {
+    "conditions": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "delightful"
+      }
+    ],
+    "predicate": {
+      "items": [
+        "delightful:copper_knife"
+      ]
+    },
+    "item": "tetra:modular_sword",
+    "modules": {
+      "sword/blade": [
+        "sword/knife",
+        "knife/copper"
+      ],
+      "sword/hilt": [
+        "sword/basic_hilt",
+        "basic_hilt/stick"
+      ]
+    }
+  },
+  {
+    "predicate": {
+      "items": [
+        "delightful:bone_knife"
+      ]
+    },
+    "item": "tetra:modular_sword",
+    "modules": {
+      "sword/blade": [
+        "sword/knife",
+        "knife/bone"
+      ],
+      "sword/hilt": [
+        "sword/basic_hilt",
+        "basic_hilt/stick"
+      ]
+    }
+  },
+  {
+    "predicate": {
+      "items": [
+        "delightful:brass_knife"
+      ]
+    },
+    "item": "tetra:modular_sword",
+    "modules": {
+      "sword/blade": [
+        "sword/knife",
+        "knife/brass"
+      ],
+      "sword/hilt": [
+        "sword/basic_hilt",
+        "basic_hilt/stick"
+      ]
+    }
+  },
+  {
+    "predicate": {
+      "items": [
+        "delightful:tin_knife"
+      ]
+    },
+    "item": "tetra:modular_sword",
+    "modules": {
+      "sword/blade": [
+        "sword/knife",
+        "knife/tin"
+      ],
+      "sword/hilt": [
+        "sword/basic_hilt",
+        "basic_hilt/stick"
+      ]
+    }
+  },
+  {
+    "predicate": {
+      "items": [
+        "delightful:steel_knife"
+      ]
+    },
+    "item": "tetra:modular_sword",
+    "modules": {
+      "sword/blade": [
+        "sword/knife",
+        "knife/steel"
+      ],
+      "sword/hilt": [
+        "sword/basic_hilt",
+        "basic_hilt/stick"
+      ]
+    }
+  },
+  {
+    "predicate": {
+      "items": [
+        "delightful:silver_knife"
+      ]
+    },
+    "item": "tetra:modular_sword",
+    "modules": {
+      "sword/blade": [
+        "sword/knife",
+        "knife/silver"
+      ],
+      "sword/hilt": [
+        "sword/basic_hilt",
+        "basic_hilt/stick"
+      ]
+    }
+  },
+  {
+    "predicate": {
+      "items": [
+        "delightful:electrum_knife"
+      ]
+    },
+    "item": "tetra:modular_sword",
+    "modules": {
+      "sword/blade": [
+        "sword/knife",
+        "knife/electrum"
+      ],
+      "sword/hilt": [
+        "sword/basic_hilt",
+        "basic_hilt/stick"
+      ]
+    }
+  },
+  {
+    "predicate": {
+      "items": [
+        "delightful:lead_knife"
+      ]
+    },
+    "item": "tetra:modular_sword",
+    "modules": {
+      "sword/blade": [
+        "sword/knife",
+        "knife/lead"
+      ],
+      "sword/hilt": [
+        "sword/basic_hilt",
+        "basic_hilt/stick"
+      ]
+    }
+  },
+  {
+    "predicate": {
+      "items": [
+        "delightful:nickel_knife"
+      ]
+    },
+    "item": "tetra:modular_sword",
+    "modules": {
+      "sword/blade": [
+        "sword/knife",
+        "knife/nickel"
+      ],
+      "sword/hilt": [
+        "sword/basic_hilt",
+        "basic_hilt/stick"
+      ]
+    }
+  },
+  {
+    "predicate": {
+      "items": [
+        "delightful:brass_knife"
+      ]
+    },
+    "item": "tetra:modular_sword",
+    "modules": {
+      "sword/blade": [
+        "sword/knife",
+        "knife/brass"
+      ],
+      "sword/hilt": [
+        "sword/basic_hilt",
+        "basic_hilt/stick"
+      ]
+    }
+  },
+  {
+    "predicate": {
+      "items": [
+        "delightful:bronze_knife"
+      ]
+    },
+    "item": "tetra:modular_sword",
+    "modules": {
+      "sword/blade": [
+        "sword/knife",
+        "knife/bronze"
+      ],
+      "sword/hilt": [
+        "sword/basic_hilt",
+        "basic_hilt/stick"
+      ]
+    }
+  },
+  {
+    "predicate": {
+      "items": [
+        "delightful:certus_quartz_knife"
+      ]
+    },
+    "item": "tetra:modular_sword",
+    "modules": {
+      "sword/blade": [
+        "sword/knife",
+        "knife/certus_quartz"
+      ],
+      "sword/hilt": [
+        "sword/basic_hilt",
+        "basic_hilt/stick"
+      ]
+    }
+  },
+  {
+    "predicate": {
+      "items": [
+        "delightful:zinc_knife"
+      ]
+    },
+    "item": "tetra:modular_sword",
+    "modules": {
+      "sword/blade": [
+        "sword/knife",
+        "knife/zinc"
+      ],
+      "sword/hilt": [
+        "sword/basic_hilt",
+        "basic_hilt/stick"
+      ]
+    }
+  }
+]

@@ -56,6 +56,5 @@ public class FTBUltimineMixin {
             }
             cir.setReturnValue(EventResult.interruptFalse());
         }
-
     }
 }

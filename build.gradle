@@ -180,6 +180,8 @@ dependencies {
     implementation fg.deobf("curse.maven:citadel-331936:5633260")
     implementation fg.deobf("curse.maven:alexs-caves-924854:5848216")
     runtimeOnly fg.deobf("curse.maven:my-nethers-delight-1003673:5673085")
+    runtimeOnly fg.deobf("curse.maven:delightful-637529:6245502")
+    runtimeOnly fg.deobf("curse.maven:all-the-ores-405593:5348605")
 
     implementation(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))
     implementation(jarJar("io.github.llamalad7:mixinextras-forge:0.4.1")) {
