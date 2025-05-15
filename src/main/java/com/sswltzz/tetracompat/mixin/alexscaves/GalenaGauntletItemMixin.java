@@ -25,7 +25,7 @@ import java.util.Iterator;
 
 @Mixin(GalenaGauntletItem.class)
 public class GalenaGauntletItemMixin {
-    @Inject(method = "use", at = @At(value = "HEAD"), cancellable = true)
+    @Inject(method = "use", at = @At(value = "HEAD"), cancellable = true, require = 1)
     public void useMixin(Level level, Player player, InteractionHand interactionHand, CallbackInfoReturnable<InteractionResultHolder<ItemStack>> cir) {
         ItemStack itemstack = player.getItemInHand(interactionHand);
         ItemStack otherHand = interactionHand == InteractionHand.MAIN_HAND ? player.getItemInHand(InteractionHand.OFF_HAND) : player.getItemInHand(InteractionHand.MAIN_HAND);
@@ -47,7 +47,7 @@ public class GalenaGauntletItemMixin {
             }
         }
     }
-    @Inject(method = "onUseTick", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;getEnchantmentLevel(Lnet/minecraft/world/item/enchantment/Enchantment;)I",shift = At.Shift.AFTER), remap = false)
+    @Inject(method = "onUseTick", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;getEnchantmentLevel(Lnet/minecraft/world/item/enchantment/Enchantment;)I",shift = At.Shift.AFTER), require = 1)
     public void useTickMixin(Level level, LivingEntity living, ItemStack stack, int timeUsing, CallbackInfo ci, @Local InteractionHand otherHand) {
 
         ItemStack otherStack = living.getItemInHand(otherHand);
