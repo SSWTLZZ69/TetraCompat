@@ -173,7 +173,7 @@ dependencies {
 //    implementation fg.deobf("curse.maven:quark-243121:6427817")
 //    implementation fg.deobf("curse.maven:zeta-968868:6432578")
     // farmers delight
-    implementation fg.deobf("curse.maven:farmers-delight-398521:6154802")
+    implementation fg.deobf("curse.maven:farmers-delight-398521:6597298")
     //exdeorum
     implementation fg.deobf("curse.maven:exdeorum-901420:6430497")
 
@@ -182,6 +182,9 @@ dependencies {
     runtimeOnly fg.deobf("curse.maven:my-nethers-delight-1003673:5673085")
     runtimeOnly fg.deobf("curse.maven:delightful-637529:6245502")
     runtimeOnly fg.deobf("curse.maven:all-the-ores-405593:5348605")
+
+//    runtimeOnly fg.deobf("curse.maven:recipeessentials-907856:6165709")
+//    runtimeOnly fg.deobf("curse.maven:cupboard-326652:5470032")
 
     implementation(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))
     implementation(jarJar("io.github.llamalad7:mixinextras-forge:0.4.1")) {

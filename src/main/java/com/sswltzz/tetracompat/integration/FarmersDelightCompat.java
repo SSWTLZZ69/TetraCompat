@@ -1,5 +1,6 @@
 package com.sswltzz.tetracompat.integration;
 
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.sswltzz.tetracompat.TetraCompat;
 import net.minecraft.core.NonNullList;
@@ -25,7 +26,11 @@ public class FarmersDelightCompat {
                 .filter(resourceLocationRecipeEntry -> resourceLocationRecipeEntry.getValue() instanceof CuttingBoardRecipe)
                 .filter(resourceLocationRecipeEntry -> !resourceLocationRecipeEntry.getKey().getNamespace().equals(FarmersDelight.MODID))
                 .filter(resourceLocationRecipeEntry -> !resourceLocationRecipeEntry.getKey().getNamespace().equals(TetraceliumMod.MOD_ID))
-                .filter(resourceLocationRecipeEntry -> ((JsonObject) ((CuttingBoardRecipe) resourceLocationRecipeEntry.getValue()).getTool().toJson()).get("tag").getAsString().equals("forge:tools/knives"))
+                .filter(resourceLocationRecipeEntry -> {
+                    JsonObject toolJson = (JsonObject) ((CuttingBoardRecipe) resourceLocationRecipeEntry.getValue()).getTool().toJson();
+                    JsonElement tagElement = toolJson.get("tag");
+                    return tagElement != null && tagElement.getAsString().equals("forge:tools/knives");
+                })
                 .collect(Collectors.toMap(
                         Map.Entry::getKey,
                         entry -> (CuttingBoardRecipe) entry.getValue()
