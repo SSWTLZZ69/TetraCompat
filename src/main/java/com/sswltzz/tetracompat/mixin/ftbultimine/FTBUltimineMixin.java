@@ -27,7 +27,7 @@ import java.util.Comparator;
 @Mixin(FTBUltimine.class)
 public class FTBUltimineMixin {
 
-    @Inject(method = "blockRightClick", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbultimine/FTBUltiminePlayerData;updateBlocks(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;ZI)Ldev/ftb/mods/ftbultimine/shape/ShapeContext;", shift = At.Shift.AFTER), remap = false, require = 1, cancellable = true)
+    @Inject(method = "blockRightClick", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbultimine/FTBUltiminePlayerData;updateBlocks(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;ZI)Ldev/ftb/mods/ftbultimine/shape/ShapeContext;", shift = At.Shift.AFTER), remap = false, cancellable = true)
     public void blockRightClickMixin(Player player, InteractionHand hand, BlockPos clickPos, Direction face, CallbackInfoReturnable<EventResult> cir, @Local ServerPlayer serverPlayer, @Local FTBUltiminePlayerData data) {
         int didWork = 0;
         ItemStack itemStack = serverPlayer.getItemInHand(hand);
