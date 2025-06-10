@@ -36,7 +36,7 @@ public class FarmersDelightCompat {
                         entry -> (CuttingBoardRecipe) entry.getValue()
                 ));
         cuttingRecipes.forEach((originalID, recipe) -> {
-            var id = new ResourceLocation(TetraCompat.MODID, String.format("cutting/tetracelium_%s", originalID.getPath()));
+            var id = new ResourceLocation(TetraCompat.MODID, String.format("tetracelium_%s_from_%s", originalID.getPath(), originalID.getNamespace()));
             NonNullList<ChanceResult> chanceResults = recipe.getRollableResults();
             Ingredient ingredient = Ingredient.merge(recipe.getIngredients());
             CuttingBoardRecipe cuttingBoardRecipe = new CuttingBoardRecipe(id, "", ingredient, new ToolActionIngredient(FarmersDelightToolActions.bladeCut), chanceResults, ModSounds.BLOCK_CUTTING_BOARD_KNIFE.getId().toString());
